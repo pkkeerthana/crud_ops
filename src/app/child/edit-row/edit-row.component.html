@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="edit_form">
+        <div class="lines">
+          <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input matInput [(ngModel)]="details.name">
+          </mat-form-field>
+        </div>
+        <div class="lines">
+          <mat-form-field appearance="outline">
+            <mat-label>Age</mat-label>
+            <input matInput [(ngModel)]="details.age">
+          </mat-form-field>
+        </div>
+        <div class="lines">
+          <mat-form-field appearance="outline">
+            <mat-label>Phone</mat-label>
+            <input matInput [(ngModel)]="details.phone">
+          </mat-form-field>
+        </div>
+        <div class="lines">
+          <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput [(ngModel)]="details.email">
+          </mat-form-field>
+        </div>
+    
+      </div>
+      <div>
+          <h3>Edit Changes?</h3>
+          <div class="details_form">
+            <div class="lines">
+                <button mat-button class="yes-btn" (click)="onAction('edit')">YES</button>
+            </div>
+            <div class="lines">
+                <button mat-button class="no-btn" (click)="onAction('cancel')">NO</button>
+            </div>
+          </div>
+      </div>
+</div>

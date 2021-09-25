@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'parentchild';
+  name:string;
+  age:string;
+  phone:string;
+  email:string;
+  table_data : string;
+
+  onSubmit(){
+    this.table_data = this.name + ':' + this.age + ':' + this.phone + ':' + this.email;
+  }
 }

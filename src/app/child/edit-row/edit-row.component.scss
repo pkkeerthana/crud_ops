@@ -1,0 +1,27 @@
+.container{
+    display: grid;
+    place-items: center;
+    .edit_form{
+        display:flex;
+        flex-direction: column;
+        .lines{
+            margin:0 5px;
+        }
+    }
+    .details_form{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly; 
+    }
+    
+    .yes-btn{
+        background-color: green;
+        color:white;
+        margin:0 5px;
+    }
+    .no-btn{
+        background-color: red;
+        color:white;
+        margin:0 5px;
+    }
+}
